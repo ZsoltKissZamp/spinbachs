@@ -11,8 +11,6 @@ h1 {
 }
 .loadAnim {
   position: absolute;
-  right: 0;
-  padding-right: 55.5%;
   top: 200px;
 }
 .loadeAnim1,
@@ -61,6 +59,8 @@ footer {
 ul {
   list-style: none;
   line-height: 3rem;
+  margin: 0;
+  padding: 0;
 }
 @keyframes change-color {
   from {color: #333;}

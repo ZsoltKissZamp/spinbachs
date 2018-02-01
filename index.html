@@ -22,8 +22,8 @@
   </content>
   <footer>
     <ul>
-      <li><h2><i class="glyphicon glyphicon-user"></i> Zsolt Kiss</h2>
-        
+      <li>
+        <h2><i class="glyphicon glyphicon-user"></i> Zsolt Kiss</h2>
       </li>
       <li>
         <i class="glyphicon glyphicon-envelope"></i>
@@ -32,4 +32,13 @@
     </ul>
   </footer>
 </body>
+<script>
+  WS = window.screen.width;
+  lA = document.getElementsByClassName('loadAnim')[0];
+  if(WS > 1000) {
+    lA.style.marginLeft = WS/2.27+'px'
+  } else {
+    lA.style.marginLeft = WS/3.15+'px'
+  }
+</script>
 </html>

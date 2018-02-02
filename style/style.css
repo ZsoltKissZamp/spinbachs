@@ -9,9 +9,17 @@ content {
 h1 {
   animation: change-color 15s linear infinite;
 }
+h3 {
+  color: #333;
+}
+.cary {
+  position: relative;
+  display: block;
+}
 .loadAnim {
   position: absolute;
-  top: 200px;
+  top: 50%;
+  left: 44%
 }
 .loadeAnim1,
 .loadeAnim2,
@@ -44,9 +52,6 @@ h1 {
   top: 35px;
   left: 35px;
   animation: topToBottom 10s linear infinite;
-}
-h3 {
-  color: #333;
 }
 footer {
   position: absolute;

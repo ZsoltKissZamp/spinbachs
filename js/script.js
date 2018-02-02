@@ -1,6 +1,9 @@
-WS = window.innerWidth;
-if(WS > 1000) {
-  lA.style.marginLeft = WS/2.27+'px';
-} else {
-  lA.style.marginLeft = WS/3.15+'px';
-}
+let count = 0;
+let h3 = document.getElementById('change');
+let change = setInterval(function() {
+  count++;
+  if(count == 13) {
+    h3.innerHTML = "Thank You 4 Da Visit! See you Soon!";
+    clearInterval(change);
+  }
+}, 1000);

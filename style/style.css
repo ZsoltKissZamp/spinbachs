@@ -22,7 +22,7 @@ h3 {
 .loadAnim {
   position: absolute;
   top: 50%;
-  left: 44%
+  left: calc(50% - 90px);
 }
 .loadeAnim1,
 .loadeAnim2,

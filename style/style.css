@@ -38,7 +38,7 @@ h3 {
   border-bottom: 10px solid olive;
   top: 15px;
   left: 15px;
-  animation: leftToRight 10s linear infinite;
+  animation: leftToRight 10s infinite linear;
 }
 .loadeAnim2 {
   width: 130px;
@@ -46,6 +46,7 @@ h3 {
   border: 10px solid gray;
   top: 25px;
   left: 25px;
+  animation: spin 10s infinite linear;
 }
 .loadeAnim3 {
   width: 110px;
@@ -70,21 +71,27 @@ ul {
   margin: 0;
   padding: 0;
 }
+@keyframes spin {
+  0% {transform: rotateY(0deg);}
+  5% {transform: rotateY(30deg);}
+  10% {transform: rotateY(0deg);}
+  95% {transform: rotateY(-30deg)}
+  100% {transform: rotateY(-10deg);}
+}
 @keyframes change-color {
   from {color: #333;}
   to {color: #300;}
 }
 @keyframes leftToRight {
-  from {
-    transform: rotate(0deg);
-    animation: change-color infinite 10s;
-  }
-  to {
-    transform: rotate(360deg);
-    animation: change-color infinite 10s;
-  }
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
 }
 @keyframes topToBottom {
   from {transform: rotate(0deg);}
   to {transform: rotate(-360deg);}
+}
+@media (max-width: 1000px){
+  .loadAnim{
+    left: 28%;
+  }
 }

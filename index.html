@@ -1,41 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de" >
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spin</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="./logo.png" rel="icon">
-  <title>Spinbachs</title>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <content>
-    <h1 class="title">Under Construction</h1>
-    <h3 id="change">Pleas stand by...</h3>
-    <div class="cary">
-      <div class="loadAnim">   
-        <div class="loadeAnim1"></div>
-        <div class="loadeAnim2"></div>
-        <div class="loadeAnim3"></div>
-      </div>
-    </div>
-  </content>
-  <footer>
-    <ul>
-      <li>
-        <h2>
-          <a class="personal" href="./DaLetter.pdf"><i class="glyphicon glyphicon-user"></i></a>
-          Zsolt Kiss
-        </h2>
-      </li>
-      <li>
-        <i class="glyphicon glyphicon-envelope"></i>
-        <a href="mailto:dzsingis@gmail.com" _target="top" class="personal">dzsingis@gmail.com</a>
-      </li>
-    </ul>
-  </footer>
+  <body>
+  <div id="app">
+    <nav-bar></nav-bar>
+    <head-bar></head-bar>
+    <router-view></router-view>
+    <foot-bar></foot-bar>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js'></script>
+  <script src='https://unpkg.com/vuex@3.0.1/dist/vuex.js'></script>
+  <script src='https://unpkg.com/vue-router/dist/vue-router.js'></script>
+  <script  src="js/index.js"></script>
 </body>
-<script src="./script.js"></script>
 </html>

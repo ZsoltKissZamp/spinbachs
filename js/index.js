@@ -60,12 +60,11 @@ Vue.component('foot-bar', {
   data: function data() {
     return {
       author: 'Zsolt Kiss',
-      email: 'dzsingis@gmail.com',
-      Href: './DaLetter.pdf'
+      email: 'dzsingis@gmail.com'
     };
   },
 
-  template: "<footer>\n      <ul>\n        <li>\n          <h2>\n            <a class=\"personal\" href=\"{{Href}}\"><i class=\"glyphicon glyphicon-user\"></i></a>\n            {{ author }}\n          </h2>\n        </li>\n        <li>\n          <i class=\"glyphicon glyphicon-envelope\"></i>\n          <a class=\"personal\" href=\"mailto:{{email}}\" _trarget=\"top\">{{email}}</a>\n        </li>\n      </ul>\n    </footer>"
+  template: "<footer>\n      <ul>\n        <li>\n          <h2>\n            <a class=\"personal\" href=\"./DaLetter.pdf\"><i class=\"glyphicon glyphicon-user\"></i></a>\n            {{ author }}\n          </h2>\n        </li>\n        <li>\n          <i class=\"glyphicon glyphicon-envelope\"></i>\n          <a class=\"personal\" href=\"mailto:{{email}}\" _trarget=\"top\">{{email}}</a>\n        </li>\n      </ul>\n    </footer>"
 });
 // Create App
 new Vue({
